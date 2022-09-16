@@ -25,6 +25,28 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   },
 })
 
+export const welcomeSectionData = (t: TranslateFunction): SalesSectionProps => ({
+  headingText: t('Welcome to The DefiSwap Exchange'),
+  bodyText: t('Trade,earn and win crypto on most popular decentralized platform in the galaxy.'),
+  reverse: false,
+  primaryButton: {
+    to: '/swap',
+    text: t('Trade Now'),
+    external: false,
+  },
+  secondaryButton: {
+    to: 'https://docs.defiswap.io/',
+    text: t('Learn'),
+    external: true,
+  },
+  images: {
+    path: '/images/home/welcome/',
+    attributes: [
+      { src: 'robot', alt: t('Folder') }
+    ],
+  },
+})
+
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Earn passive income with crypto.'),
   bodyText: t('PancakeSwap makes it easy to make your crypto work for you.'),
